@@ -1,0 +1,114 @@
+.portfolio-list { 
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 4px;
+
+    color: $title-text-color;
+
+    &__link:focus,
+    &__link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06), 
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+} 
+
+.portfolio-list a,
+.portfolio-list img {
+    display: block;
+}
+
+.portfolio-list .portfolio-list__item {
+    width: 370px;
+
+    outline: 1px solid #eeeeee;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    background-color: #fff;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+    &:nth-last-child(-n +3) {
+        margin-bottom: 0;
+    }
+}
+
+.portfolio-list__link:focus .portfolio-list__overlay,
+.portfolio-list__item:hover .portfolio-list__overlay {
+    transform: translateY(0);
+}
+
+.portfolio-pattern {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    &:hover .portfolio-list__text,
+    &:focus .portfolio-list__text {
+        opacity: 1;
+    }
+}
+
+.portfolio-list__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    background-color: $accent-color-card;
+
+    transition: transform $animation-duration $animation-type;
+
+    transform: translateY(100%);
+}
+
+.portfolio-list__text {
+    position: absolute;
+    display: flex;
+
+    
+    width: 322px;
+    height: 168px;
+    top: 63px;
+    right: 24px;
+    bottom: 63px;
+    left: 24px;
+
+    font-family: $main-font-family;
+    font-weight: $small-main-font-size-weight;
+    font-size: $portfolio-title-size;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+
+    color: $hero-text-color;
+}
+
+.portfolio-rubric {
+    padding: 20px 24px;
+}
+
+.portfolio-title {
+    margin-bottom: 4px;
+
+    font-family: $main-font-family;
+    font-weight: $upper-main-font-size-weight;
+    font-size: $portfolio-title-size;
+    line-height: $portfolio-line-hight;
+    letter-spacing: 0.06em;
+
+    color: $title-text-color;
+}
+
+.category {
+    font-family: $main-font-family;
+    font-weight: $small-main-font-size-weight;
+    font-size: $upper-main-font-size;
+    line-height: $upper-main-font-line-hight;
+    letter-spacing: 0.03em;
+
+    color: $primary-text-color;
+}   

@@ -1,0 +1,39 @@
+.footer-socials {
+    display: block;
+    align-items: center;
+
+    font-family: $main-font-family;
+    font-weight: $upper-main-font-size-weight;
+    font-size: $middle-main-font-size;
+    line-height: $middle-main-font-line-hight;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $hero-text-color;
+}
+
+.footer-appendix {
+    margin-bottom: 20px;
+}
+
+.socials-link {
+    display: inline-flex;
+    justify-content: center;
+
+    &__item:not(:last-child) {
+    margin-right: 10px;
+    }
+}
+
+.social-badge {
+    @extend %social-markup;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $hero-text-color;
+  
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $hero-text-color;
+    }
+}

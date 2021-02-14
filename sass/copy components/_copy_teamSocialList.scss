@@ -1,0 +1,25 @@
+.social {
+    display: flex;
+    justify-content: center;
+
+    &__distance:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
+
+.social__badge {
+    @extend %social-markup;
+
+    background-color: #FFFFFF;
+    color: $icon-main-color;
+
+    &:focus,
+    &:hover {
+        background-color: $accent-color;
+        color: $hero-text-color;
+    }
+}

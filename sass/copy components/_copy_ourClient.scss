@@ -1,0 +1,41 @@
+.client__heading {
+    @extend %section-heading;
+}
+
+.client-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.client-list__container {
+    width: 170px;
+    height: 90px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.client-list__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    fill: $icon-main-color;
+    
+    transition: $animation-duration $animation-type;
+
+    &:focus, &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+    }
+}

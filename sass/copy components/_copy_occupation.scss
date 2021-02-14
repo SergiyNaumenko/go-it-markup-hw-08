@@ -1,0 +1,50 @@
+.occupation-section {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+
+.occupation {
+    display: flex;
+    justify-content: space-between;
+    
+    &__item {
+    position: relative;
+    width: 370px;
+    }
+
+    &__overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $hero-text-color;
+        background: rgba(47, 48, 58, 0.8);
+    }
+
+    &__overlay::before {
+    position: absolute;
+    }
+}
+
+.occupation-heading {
+    @extend %section-heading;
+}
+
+.product-overlay {
+    position: relative;
+    display: flex;
+}
+
+.occupation__text {
+    font-family: $main-font-family;
+    font-weight: $upper-main-font-size-weight;
+    font-size: $middle-main-font-size;
+    line-height: $middle-main-font-line-hight;
+    
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+

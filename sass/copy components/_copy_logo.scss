@@ -1,0 +1,17 @@
+.logo-blue {
+    margin-right: 95px;
+
+    font-family: $secondary-font-family;
+    font-weight: $large-secondary-font-size-weight;
+    font-size: $large-secondary-font-size;
+    line-height: 1.19;
+    letter-spacing: $large-secondary-font-line-hight;
+
+    color: $accent-color;
+}
+.logo-dark {
+    color: $title-text-color;
+}
+.logo-white {
+    color: $hero-text-color;
+}

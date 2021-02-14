@@ -1,0 +1,55 @@
+.footer-contacts {
+    margin-right: 70px;
+}
+
+.address-post {
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: $small-main-font-size-weight;
+    font-size: $small-main-font-size;
+    line-height: $small-main-font-line-hight;
+    letter-spacing: 0.03em;
+
+    color: $hero-text-color;
+}
+
+.footer-address {
+    display: block;
+    margin-bottom: 9px;
+    padding: 0;
+   
+    font-family: $main-font-family;
+    font-weight: $small-main-font-size-weight;
+    font-size: $small-main-font-size;
+    line-height: $small-main-font-line-hight;
+    letter-spacing: 0.03em;
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.address-footer__link {
+    display: inline-block;
+    padding: 0;
+
+    font-weight:$middle-main-font-size-weight;
+    font-size: $middle-main-font-size;
+    line-height: $middle-main-font-line-hight;
+    letter-spacing: 0.02em;
+
+    fill: $primary-text-color;
+    color: $primary-text-color;
+    transition: color $animation-duration $animation-type;
+
+    &:hover,
+    &:focus,
+    &:hover,
+    &:focus{
+        color: $accent-color;
+        fill: currentColor;
+    }
+}

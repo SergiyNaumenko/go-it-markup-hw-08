@@ -1,0 +1,23 @@
+.feature-list {
+    &__benefits:not(:nth-child(4n)) {
+        margin-bottom: 30px;
+    }
+
+    // &__benefits {
+    //     width: calc((1170px - 90px) / 4);
+    // }
+}
+
+.feature-list__icon {
+   
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 25px 0px;
+    background-color: $background-secondary-color;
+    border-radius: 4px;
+}
+
+.feature-list__item {
+    width: 70px;
+    height: 70px;
+}
