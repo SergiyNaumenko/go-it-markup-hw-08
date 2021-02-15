@@ -1,11 +1,14 @@
 .filter-set{
-	// display: flex;
-	// justify-content: center;
-    margin-bottom: 34px;
+	display: flex;
+	flex-wrap: wrap;
+    margin-bottom: 40px;
 
     &__item:not(:last-child) {
         margin-right: 8px;
+        margin-bottom: 34px;
     }
+
+
 }
 
 .filter-set__btn {
