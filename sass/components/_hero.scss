@@ -1,4 +1,18 @@
 .hero {
+    width: 480px;
+    
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 1200px; 
+    }
+    
     padding: 0;
     margin: 0 auto;
   
@@ -18,12 +32,10 @@
     
         color: $hero-text-color;
     }
-    
+    // margin: 0 0 60px 0;
 }
 
 .hero-overlay {
-    // max-width: 1600px;
-    // height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(
@@ -38,9 +50,12 @@
 }
 
 .hero-container {
-    width: 696px;
-    height: 120px;
-    margin: 0 auto;
+    // height: 120px;
+    // margin: 0 auto;
+    padding: 118px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
 }
 
 .hero__button {
@@ -50,3 +65,4 @@
     }
    @extend %main-button
 }
+

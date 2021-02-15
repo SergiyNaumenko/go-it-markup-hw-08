@@ -1,11 +1,10 @@
 .occupation-section {
+    display: none;
     padding-top: 0;
     padding-bottom: 94px;
 }
 
 .occupation {
-    // display: flex;
-    // justify-content: space-between;
     
     &__item {
     position: relative;

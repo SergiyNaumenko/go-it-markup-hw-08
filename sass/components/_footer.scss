@@ -1,11 +1,9 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
+    width: 100%;
+    padding: 60px 0;
     background-color: $background-hero-footer-color;
 }
 
 .footer-info {
-    // display: flex;
-    align-items: baseline;
+  text-align: center;
 }

@@ -1,6 +1,7 @@
 .container {
     display: block;
     align-items: center;
+    width: 480px;
 
     padding: 0 15px;
     margin: 0 auto;
@@ -18,7 +19,8 @@
     }
 }
 
+
 .section {
     padding-top: 60px;
-    // padding-bottom: 94px;
+    padding-bottom: 60px;
 }
