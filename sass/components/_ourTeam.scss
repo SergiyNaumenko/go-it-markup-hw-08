@@ -25,6 +25,11 @@
         background-color: #ffffff; 
     }
 
+    &__card:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+
     &__person {
         margin-bottom: 10px;
         text-align: center;

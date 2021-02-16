@@ -25,6 +25,13 @@
     }
 }
 
+.page-header__container-mobile {
+    // position: relative;
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .site-nav {
     display: none;
@@ -153,10 +160,17 @@
 
 
 .menu-button {
+    // position: absolute;
+    // top: 10px;
+    // right: 15px;
+    // width: 40px;
+    // height: 40px;
+    // padding: 0;
+
     display: inline-flex;
     margin: 0;
     padding: 0;
-    margin-left: auto;
+    // margin-left: auto;
     background-color: transparent; 
     border: none;
     cursor: pointer;
@@ -178,8 +192,6 @@
 }
 
 .logo-blue {
-    padding: 16px 0;
-    margin-right: 88px;
 
     font-family: $secondary-font-family;
     font-weight: $large-secondary-font-size-weight;
@@ -188,6 +200,11 @@
     letter-spacing: $large-secondary-font-line-hight;
 
     color: $accent-color;
+
+    @media screen and (max-width: 767px) {
+        display: inline-block;
+        padding: 16px 0;
+    }
 }
 .logo-dark {
     color: $title-text-color;

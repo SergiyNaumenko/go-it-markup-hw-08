@@ -9,34 +9,47 @@
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
                 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-} 
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-right: -15px;
+        margin-left: -15px;
+    }      
+}     
 
 .portfolio-list__item {
     @media screen and (min-width: 768px) {
-        width: 768px;
+        // width: 768px;
+        // margin-bottom: 0;
+        // display: inline-block;
+        // margin-top: 30px;
+        // margin-right: 15px;
+        // margin-left: 15px;
+        // height: auto;
+        // width: calc((100% - 4 * 15px) / 2)
+    }
+}
+
+.portfolio-list__item:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 480px){
+        width: 480px;
+    }
+    @media screen and (min-width: 768px) {
         margin-bottom: 0;
         display: inline-block;
         margin-top: 30px;
         margin-right: 15px;
         margin-left: 15px;
         height: auto;
-        width: calc((100% - 4 * 15px) / 2)
-    }
-}
-
-.portfolio-list__item:not(:last-child) {
-    @media screen and (min-width: 480px){
-        width: 480px;
-        margin-bottom: 30px;
-    }
-    @media screen and (min-width: 768px) {
-        margin-bottom: 0;
+        width: calc((100% - 4 * 15px) / 2);
     }
     @media screen and (min-width: 1200px){
-        // width: 1200px; 
         width: calc((100% - 6 * 15px) / 3);
-    }
-    
+    }    
 }
 
 .portfolio-list a,
@@ -45,12 +58,7 @@
 }
 
 .portfolio-list .portfolio-list__item {
-    // width: 370px;
-
     outline: 1px solid #eeeeee;
-    // margin-right: 30px;
-    // margin-bottom: 30px;
-
     background-color: #fff;
    
 
@@ -68,7 +76,7 @@
 }
 
 .portfolio-pattern {
-    // display: inline-block;
+    display: inline-block;
     position: relative;
     overflow: hidden;
 
